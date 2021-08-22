@@ -1,5 +1,8 @@
 {
-  "countdown": {
+  "footerupmedal": {
     "component": "Countdown"
+  },
+  "form-lead": {
+    "component": "formulario"
   }
 }
