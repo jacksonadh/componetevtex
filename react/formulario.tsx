@@ -22,12 +22,23 @@ const Formulario = () => {
   const changeEmail = (event: any) => {
     setEmail(event.target.value)
   }
-  let id = Math.random()
-  let data = { id, name, email }
+  function getRandom(min: number, max: number) {
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+  let indice = getRandom(1, 100)
+  indice.toString
+  let id = '' + indice
+  console.log(indice)
+  let data = {
+    "id": id,
+    "name": name,
+    "email": email
+  }
+  console.log(data)
   const handleSubmit = (event: any) => {
     event.preventDefault();
     axios.put('https://qj3nggde3c.execute-api.us-east-2.amazonaws.com/items',
-      console.log(data));
+      data);
   }
 
 
