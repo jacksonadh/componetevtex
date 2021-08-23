@@ -1,6 +1,6 @@
 {
   "footerupmedal": {
-    "component": "Countdown"
+    "component": "footerupmedal"
   },
   "form-lead": {
     "component": "formulario"
